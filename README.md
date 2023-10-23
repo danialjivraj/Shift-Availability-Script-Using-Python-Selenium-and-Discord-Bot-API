@@ -26,7 +26,7 @@ To see the versions of Chrome Driver available, click <a href="https://googlechr
 I put my Chrome Driver logic in my `chromeDriverMode.py` file. And when calling it on `jenBot.py`, I can set it to `True`, meaning it will be in headless mode, making it invisible, or to `False`, making it visible, so that I can see the brower opening and executing the steps. I would only set it to `False`, to check for bugs or to see if it was running problem in real time, when everything was running perfectly, I could set it to `True` and let it run in the background for as long as I wanted it to.
 
 ## Description
-**Jen** is a Discord bot designed to automate the process of checking and booking shifts on a scheduling website. It utilizes Selenium and Discord.py to interact with the scheduling website and retrieve information about available and booked shifts. Jen operates based on various different commands entered in the designated Discord channel.
+**Jen** is a Discord bot designed to automate the process of checking and booking shifts on a scheduling website. It utilizes Selenium and Discord.py to interact with the scheduling website and retrieve information about available and booked shifts. **Jen** operates based on various different commands entered in the designated Discord channel.
 
 ## Features
 - **Shift Availability Notification:** Notifies users in real-time about available and booked shifts on specified days, as well as having the ability to look for specific shifts, for example **"10:00 - 18:00"** on Saturday.
@@ -66,7 +66,7 @@ I hid my login information for obvious reasons and the URL's for the website as 
 Because there are 2 pages of booking days, I made sure to run the same code on the second page, if there was available days or shifts, it would simply add onto the lists from the first page.
 
 ## The loop_available_days_and_booked_days Function
-This loop will only check for available and booked days. It does not need to click on any day for it to know if it is available or not, as it can retrieve all the information necessary from the get-go. It does not matter what type of shift is available, if there is any shift availble, it will let me know by sending a message through Jen.<br>
+This loop will only check for available and booked days. It does not need to click on any day for it to know if it is available or not, as it can retrieve all the information necessary from the get-go. It does not matter what type of shift is available, if there is any shift availble, it will let me know by sending a message through **Jen**.<br>
 When the message is sent, it will send both available and booked days.<br>
 The code contains the current day, which is used to compare the present day with the days from the website. If there is an available day but that day was from a previous day compared to present day (which did happen because although it was Grey in the website, meaning it was unavailable, the source code would indicate it was not for some reason), it should not send me a message, because it is impossible to book days which are in the past. This logic ensures the that it will only show me days starting from tomorrow onwards.
 An example of what it would show if I used my `f` command, which in my case only looks for Saturday and Sunday days
@@ -86,7 +86,7 @@ For further explanation, the "f" simply means filtering days. The logic can be f
 This loop will click on specific days, and check for specific shifts I had set up. When the script is running, it will click on each day that was defined in the parameter, and then it will start looking to see if any of the shifts available match the shift time defined in the parameter.
 If it does match, it will send this message:
 ![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/e60b0913-0273-4aa5-b5aa-afe58bf0d6b9)
-In this case it also sent available and booked days because I hadn't booked anything for that specific day, but if for example I had booked the shift "10:00 - 14:00" for Sunday but I want to have the "11:00 - 18:00" shift, Jen would only send me the purple message if it found the shift to be available, which would look like this:
+In this case it also sent available and booked days because I hadn't booked anything for that specific day, but if for example I had booked the shift "10:00 - 14:00" for Sunday but I want to have the "11:00 - 18:00" shift, **Jen** would only send me the purple message if it found the shift to be available, which would look like this:
 ![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/b76de76d-ee53-488e-ab2c-280689a3abf3)
 
 ## Automatically add specific shifts
@@ -97,7 +97,7 @@ When a checkbox is clicked, the page refreshes itself. This was a problem for my
 Not only will it tell me it has been automatically added, but it also updates the Booked Days message with the "Days added" followed by the day that was added. This required 0 human interaction as the script booked it automatically according to my preferences.
 
 ## Discord Logic
-After the script runs, it will store the information in lists, and then those lists are used and sent to Jen. <br>
+After the script runs, it will store the information in lists, and then those lists are used and sent to **Jen**. <br>
 I formatted the discord text and made it embed to make it look nicer and cleaner. Booked days display a blue line, while Available days display green. Specific Available days as purple and Automatic Checking as red.
 
 ## Conclusion
