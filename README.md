@@ -45,7 +45,10 @@ I put my Chrome Driver logic in my `chromeDriverMode.py` file. And when calling 
 7. **Automation:** Optionally automates the booking process automatically for desired shifts without manual interaction.
 
 ## Commands
-These are the various different commands I decided to create, they are abbreviated so that I can easily type a command. Each of these commands has a different set of boolean conditions in the function's parameters, which creates flexibility without breaking the code.
+These are the various different commands I decided to create, they are abbreviated so that I can easily type a command. Each of these commands has a different combination of boolean conditions in the function's parameters, which creates flexibility, giving over 10 different type of options of how the script can be run without breaking the code.
+![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/ba8740d1-7116-4d23-9fc7-6c4291da1ffe)
+
+![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/8ec5480c-2954-413b-8445-94ac1d14a443)
 
 - **f:** Filter available and booked shifts and send both booked and available days.
 - **fa:** Filter available shifts only and send available days only (no booked days).
