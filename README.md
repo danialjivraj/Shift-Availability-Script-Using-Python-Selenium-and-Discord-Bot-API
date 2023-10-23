@@ -91,7 +91,7 @@ In this case it also sent available and booked days because I hadn't booked anyt
 
 ## Automatically add specific shifts
 I also included the option of having an automated booking system, which was defined using `auto_check`, which is a boolean of which when it is `True`, it will click on the checkbox that matches the condition.<br>
-When a checkbox is clicked, the page refreshes itself. This was a problem for my script because it would crash, I would have to catch the exception, so that even if it closes the script, it had clicked on the checkbox, which meant the day was now booked, and with the day being booked I could let **Jen** send me this following message:
+When a checkbox is clicked, the page refreshes itself. This was a problem for my script because it would crash, I would have to catch the exception, so that even if it closes the script, it had clicked on the checkbox, which meant the day was now booked, and with the day being booked I could let **Jen** send me this following message (notice how I used the command `af`, which means it is going to automate my booking only for the **filtered** days, and send me both available and booked days):
 ![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/1890493b-247c-4b48-b149-a8001fc2fb7c)
 
 Not only will it tell me it has been automatically added, but it also updates the Booked Days message with the "Days added" followed by the day that was added. This required 0 human interaction as the script booked it automatically according to my preferences.
