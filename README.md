@@ -1,4 +1,4 @@
-# Shift Availability Script Using Python Selenium and Using The Discord Bot API to Send the Notifications
+# Shift Availability Notification Script Using Python Selenium and Using The Discord Bot API to Send the Notifications
 ## The Problem
 I used to work a fully remote flexible job, which I had to go to the booking webpage in order to check if any bookings are available, and if so, I could select that day, and select my shift. There would be different shift, such as morning shifts, afternoon shifts, and morning and afternoon shifts (full shift).
 Because there used to be hundreds of people working the same job role as me, getting the shifts I wanted, which were the weekend shifts (which were the most competitive shifts to get), would be quite challenging as available shifts would be fully booked in a matter of minutes.<br>
