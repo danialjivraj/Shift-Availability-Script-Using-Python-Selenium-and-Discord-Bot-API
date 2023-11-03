@@ -1,4 +1,4 @@
-# Shift Availability Notification Script Using Python Selenium and Using The Discord Bot API to Send the Notifications
+# Booking Shift Website Webscraper Using Selenium and Sending Notifications Of Available Shifts Through The Discord Bot API
 ## The Problem
 This is a booking shift website, which works on a first come first serve.
 Now for example, the shift "10:00 - 18:00" on the Saturdays could be available for only 50 people, and the first 50 people to book them get it. Now suppose, let's say Bob, was the 50th person to book this shift, the day would turn into the colour grey (if there was no more shifts available from that day). <br>
