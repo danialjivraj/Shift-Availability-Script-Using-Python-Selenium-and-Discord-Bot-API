@@ -11,11 +11,15 @@ Reserved shifts can be canceled up to two days before the shift. <br>
 However, if a particular day and shift are fully booked and someone cancels, the newly available shift isn't automatically made known to everyone. <br>
 
 ## Website Preview
-![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/79e0fe66-0ddc-461c-a9f1-08362bdc4052)<br>
-Clicking on a day with available shifts<br>
-![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/84464807-b133-420f-96ff-da4d8b1a042e)<br>
-Clicking on a day which has been booked<br>
-![image](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/92ec7304-1b68-4c01-8572-b6789b76384e)<br>
+
+![Available Shifts Preview](https://github.com/danialjivraj/Shift-Availability-Script-Using-Python-Selenium-and-Discord-Bot-API/assets/61945058/79e0fe66-0ddc-461c-a9f1-08362bdc4052)
+
+### Clicking on a day with available shifts
+![Booked Shifts Preview](https://github.com/danialjivraj/booking-shift-webscraper/assets/61945058/ad17de85-360c-431a-8704-d7d009e9c737)
+
+### Clicking on a day which has been booked
+![Shift Booking Process](https://github.com/danialjivraj/booking-shift-webscraper/assets/61945058/d6f433af-b116-4fe7-8226-23ee0894e401)
+
 
 ## Script Features
 - Shift Availability Notification
